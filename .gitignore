@@ -116,4 +116,7 @@ scratch/
 experiments/
 old/
 backup/
+.claude/
+.github/
+final.py
 .gitignore
