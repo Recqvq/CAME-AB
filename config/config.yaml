@@ -1,0 +1,106 @@
+# Configuration for Multi-Modal Transformer Model
+
+# Data paths
+paths:
+  esmc:
+    train_features: '/home/wrj/Rec/A/Esmc/esmc_train_features.npy'
+    train_labels: '/home/wrj/Rec/A/Esmc/esmc_train_labels.npy'
+    val_features: '/home/wrj/Rec/A/Esmc/esmc_val_features.npy'
+    val_labels: '/home/wrj/Rec/A/Esmc/esmc_val_labels.npy'
+    test_features: '/home/wrj/Rec/A/Esmc/esmc_test_features.npy'
+    test_labels: '/home/wrj/Rec/A/Esmc/esmc_test_labels.npy'
+  
+  esmcStructure:
+    train_features: '/home/wrj/Rec/A/EsmcStructure/esmc_multifeature_train_features.npy'
+    train_labels: '/home/wrj/Rec/A/EsmcStructure/esmc_multifeature_train_labels.npy'
+    val_features: '/home/wrj/Rec/A/EsmcStructure/esmc_multifeature_val_features.npy'
+    val_labels: '/home/wrj/Rec/A/EsmcStructure/esmc_multifeature_val_labels.npy'
+    test_features: '/home/wrj/Rec/A/EsmcStructure/esmc_multifeature_test_features.npy'
+    test_labels: '/home/wrj/Rec/A/EsmcStructure/esmc_multifeature_test_labels.npy'
+  
+  onehot:
+    train_features: '/home/wrj/Rec/A/OneHot/onehot_train_features.npy'
+    train_labels: '/home/wrj/Rec/A/OneHot/onehot_train_labels.npy'
+    val_features: '/home/wrj/Rec/A/OneHot/onehot_val_features.npy'
+    val_labels: '/home/wrj/Rec/A/OneHot/onehot_val_labels.npy'
+    test_features: '/home/wrj/Rec/A/OneHot/onehot_test_features.npy'
+    test_labels: '/home/wrj/Rec/A/OneHot/onehot_test_labels.npy'
+  
+  blosum:
+    train_features: '/home/wrj/Rec/A/BLOSUM/blosum_train_features.npy'
+    train_labels: '/home/wrj/Rec/A/BLOSUM/blosum_train_labels.npy'
+    val_features: '/home/wrj/Rec/A/BLOSUM/blosum_val_features.npy'
+    val_labels: '/home/wrj/Rec/A/BLOSUM/blosum_val_labels.npy'
+    test_features: '/home/wrj/Rec/A/BLOSUM/blosum_test_features.npy'
+    test_labels: '/home/wrj/Rec/A/BLOSUM/blosum_test_labels.npy'
+  
+  gcn:
+    train_val_features: '/home/wrj/Rec/A/GCN/gcn_train_val_features.npy'
+    train_val_labels: '/home/wrj/Rec/A/GCN/gcn_train_val_labels.npy'
+    test_features: '/home/wrj/Rec/A/GCN/gcn_test_features.npy'
+    test_labels: '/home/wrj/Rec/A/GCN/gcn_test_labels.npy'
+
+# Model configuration
+model:
+  embed_dim: 256
+  num_heads: 8
+  num_layers: 3
+  dropout: 0.3
+  feature_dim: 256
+
+# Training configuration
+training:
+  batch_size: 64
+  num_epochs: 60
+  learning_rate: 0.0005
+  weight_decay: 1e-5
+  patience: 10
+  gradient_clip: 1.0
+  mixup_prob: 0.3
+  mixup_alpha: 0.2
+  
+  # Optimizer settings
+  optimizer:
+    type: 'AdamW'
+    betas: [0.9, 0.999]
+  
+  # Scheduler settings
+  scheduler:
+    type: 'CosineAnnealingWarmRestarts'
+    T_0: 10
+    T_mult: 2
+    eta_min: 1e-6
+
+# Loss configuration
+loss:
+  label_smoothing: 0.1
+  contrastive_weight: 0.2
+  aux_weight: 0.3
+  temperature: 0.07
+
+# Data augmentation
+augmentation:
+  enabled: true
+  augment_prob: 0.3
+  mask_percent_min: 0.1
+  mask_percent_max: 0.3
+  noise_std: 0.1
+
+# Logging and output
+output:
+  save_dir: './results'
+  model_dir: './models'
+  visualization_dir: './visualizations'
+  log_file: 'training.log'
+  save_frequency: 5  # Save every N epochs
+  visualize_epochs: [1, 5, 10, 20, 30, 40, 50, 60]
+
+# Hardware
+hardware:
+  use_gpu: true
+  mixed_precision: true
+  num_workers: 4
+  pin_memory: true
+
+# Reproducibility
+seed: 42
