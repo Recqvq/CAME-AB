@@ -236,8 +236,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📧 Contact
 
 For questions or collaborations, please contact:
-- Email: your.email@example.com
-- GitHub Issues: [Create an issue](https://github.com/yourusername/CAME-AB/issues)
+- Email: hongzli2-c@my.cityu.edu.hk
 
 ## 🔍 Troubleshooting
 
