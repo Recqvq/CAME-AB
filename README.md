@@ -200,7 +200,7 @@ The framework automatically generates:
 
 Visualizations are saved in the `visualizations/` directory.
 
-## 🤝 Contributing
+<!-- ## 🤝 Contributing
 
 Contributions are welcome! Please:
 
@@ -208,7 +208,7 @@ Contributions are welcome! Please:
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit changes (`git commit -m 'Add amazing feature'`)
 4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+5. Open a Pull Request -->
 
 ## 📝 Citation
 
@@ -226,9 +226,9 @@ If you use this code in your research, please cite:
 }
 ```
 
-## 📄 License
+<!-- ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details. -->
 
 ## 🙏 Acknowledgments
 
