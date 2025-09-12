@@ -232,16 +232,16 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgments
 
-- ESM team for protein language models
-- PyTorch team for the deep learning framework
-- Contributors to the scientific Python ecosystem
-
+We thank **HKU**, **ESM**, and **PyTorch**:  
+- HKU for support and collaboration  
+- ESM team for protein language models  
+- PyTorch team for the deep learning framework  
 ## 📧 Contact
 
 For questions or collaborations, please contact:
 - Email: lihongzong@ust.hk
 
-## 🔍 Troubleshooting
+<!-- ## 🔍 Troubleshooting
 
 ### Common Issues
 
@@ -258,4 +258,4 @@ For questions or collaborations, please contact:
 3. **Poor Performance**:
    - Check data normalization
    - Adjust learning rate schedule
-   - Increase model capacity (layers, dimensions)
+   - Increase model capacity (layers, dimensions) -->
