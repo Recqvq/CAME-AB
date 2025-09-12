@@ -69,7 +69,7 @@ CAME-AB/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/CAME-AB.git
+git clone https://github.com/Recqvq/CAME-AB.git
 cd CAME-AB
 ```
 
