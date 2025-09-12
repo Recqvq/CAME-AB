@@ -215,11 +215,14 @@ Contributions are welcome! Please:
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{came-ab2024,
-  title={CAME-AB: Enhanced Multi-Modal Transformer for Protein Classification},
-  author={Your Name},
-  year={2024},
-  journal={bioRxiv}
+@misc{CAME,
+  title={CAME-AB: Cross-Modality Attention with Mixture-of-Experts for Antibody Binding Site Prediction}, 
+  author={Hongzong Li and Jiahao Ma and Zhanpeng Shi and Rui Xiao and Fanming Jin and Ye-Fan Hu and Hangjun Che and  Jian-Dong Huang},
+  year={2025},
+  eprint={2509.06465},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2509.06465}, 
 }
 ```
 
@@ -236,7 +239,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📧 Contact
 
 For questions or collaborations, please contact:
-- Email: hongzli2-c@my.cityu.edu.hk
+- Email: lihongzong@ust.hk
 
 ## 🔍 Troubleshooting
 
@@ -256,12 +259,3 @@ For questions or collaborations, please contact:
    - Check data normalization
    - Adjust learning rate schedule
    - Increase model capacity (layers, dimensions)
-
-## 🚀 Future Improvements
-
-- [ ] Add support for additional protein representations
-- [ ] Implement distributed training
-- [ ] Add MLflow/Weights & Biases integration
-- [ ] Create Docker container
-- [ ] Add pre-trained model checkpoints
-- [ ] Implement streaming data loading for large datasets
