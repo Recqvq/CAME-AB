@@ -1,7 +1,7 @@
 # CAME-AB: Enhanced Multi-Modal Transformer for Protein Classification
 
 A sophisticated deep learning framework for multi-modal protein sequence classification using attention-based transformer architecture.
-
+![CAME-AB Architecture](fig/main.png)
 ## 🚀 Features
 
 - **Multi-Modal Integration**: Combines 5 different protein representations:
