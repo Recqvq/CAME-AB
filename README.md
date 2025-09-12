@@ -2,6 +2,18 @@
 
 A sophisticated deep learning framework for multi-modal protein sequence classification using attention-based transformer architecture.
 ![CAME-AB Architecture](fig/main.png)
+
+<div align="center">
+
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/pytorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.06465-b31b1b.svg)](https://arxiv.org/abs/2509.06465)
+
+![CAME-AB Architecture](fig/main.png)
+
+</div>
+
 ## 🚀 Features
 
 - **Multi-Modal Integration**: Combines 5 different protein representations:
