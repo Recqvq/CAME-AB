@@ -170,7 +170,7 @@ Adaptively weights contributions from different modalities based on input.
 - Auxiliary modality-specific classifications
 - Contrastive learning objectives
 
-## 🔬 Experiments
+<!-- ## 🔬 Experiments
 
 ### Running Experiments
 
@@ -187,7 +187,7 @@ Adaptively weights contributions from different modalities based on input.
 3. **Ablation Studies**:
 ```python
 # Disable specific modalities in config.yaml
-```
+``` -->
 
 ## 📊 Results Visualization
 
