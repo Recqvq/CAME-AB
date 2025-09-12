@@ -1,8 +1,5 @@
 # CAME-AB: Enhanced Multi-Modal Transformer for Protein Classification
 
-A sophisticated deep learning framework for multi-modal protein sequence classification using attention-based transformer architecture.
-![CAME-AB Architecture](fig/main.png)
-
 <div align="center">
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -13,6 +10,25 @@ A sophisticated deep learning framework for multi-modal protein sequence classif
 ![CAME-AB Architecture](fig/main.png)
 
 </div>
+## 📌 Overview
+
+**CAME-AB** is a state-of-the-art deep learning framework that revolutionizes antibody binding site prediction through intelligent multi-modal feature integration. Unlike traditional single-view approaches, CAME-AB uniquely combines five biologically grounded modalities with adaptive cross-modal reasoning to achieve unprecedented accuracy in predicting antibody-specific epitopes.
+
+### 🎯 Key Innovations
+
+- **Multi-Modal Integration**: Seamlessly fuses sequence, structural, and biochemical features through adaptive modality fusion
+- **Mixture-of-Experts (MoE)**: Dynamic specialization across latent subspaces for enhanced feature discrimination  
+- **Contrastive Learning**: Enforces intra-class compactness and inter-class separability in the embedding space
+- **Superior Performance**: Consistently outperforms SOTA methods across multiple metrics (F1: 0.8185, MCC: 0.7134)
+
+### 🏆 Why CAME-AB?
+
+Traditional antibody binding site prediction methods face two critical limitations:
+1. **Single-view features** fail to capture the complex interplay between sequence, structure, and biochemistry
+2. **Generic epitope predictions** cannot identify antibody-specific binding sites
+
+CAME-AB addresses both challenges by learning adaptive cross-modal representations that capture antibody-antigen interaction specificity, enabling precise therapeutic antibody design and immunological research.
+
 
 ## 🚀 Features
 
